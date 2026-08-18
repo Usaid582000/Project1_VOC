@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareerAI – AI-Powered Career Guidance System</title>
+  <meta name="description" content="Get personalized, AI-powered career recommendations based on your skills, interests, and education. Discover your ideal career path in minutes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── LANDING PAGE ─────────────────────────────────────── -->
+  <div id="landing-page" class="page active">
+    <nav class="navbar">
+      <div class="nav-brand">
+        <span class="brand-icon">🧠</span>
+        <span class="brand-name">CareerAI</span>
+      </div>
+      <div class="nav-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#features">Features</a>
+        <button class="btn btn-primary btn-sm" onclick="showPage('form-page')">Start Free Assessment</button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-badge">✨ AI-Powered &bull; Personalized &bull; Free</div>
+      <h1 class="hero-title">
+        Discover Your<br />
+        <span class="gradient-text">Perfect Career Path</span>
+      </h1>
+      <p class="hero-subtitle">
+        Answer a few questions. Our AI analyzes your unique skills, interests, and goals to deliver a comprehensive, personalized career roadmap — in seconds.
+      </p>
+      <div class="hero-cta">
+        <button class="btn btn-primary btn-lg" id="start-btn" onclick="showPage('form-page')">
+          <span>Start My Free Assessment</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <p class="hero-note">Takes ~4 minutes &bull; No signup required</p>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">8</span><span class="stat-label">AI Analysis Steps</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Career Paths Analyzed</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Personalized to You</span></div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="how-section">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">Three Steps to Clarity</h2>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-icon">📝</div>
+          <div class="step-num">01</div>
+          <h3>Fill Your Profile</h3>
+          <p>Tell us about your education, skills, interests, and career goals through our guided questionnaire.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-card">
+          <div class="step-icon">🤖</div>
+          <div class="step-num">02</div>
+          <h3>AI Deep Analysis</h3>
+          <p>Our 8-stage AI pipeline analyzes your profile, maps skills to markets, and generates personalized insights.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-card">
+          <div class="step-icon">🗺️</div>
+          <div class="step-num">03</div>
+          <h3>Get Your Roadmap</h3>
+          <p>Receive your full career report: top paths, degree recommendations, universities, skills plan, and action steps.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features-section">
+      <div class="section-label">What You Get</div>
+      <h2 class="section-title">A Complete Career Intelligence Report</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h4>Career Path Matching</h4>
+          <p>3–5 career paths ranked by how well they match your specific profile, with reasoning for each.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎓</div>
+          <h4>Degree Recommendations</h4>
+          <p>Specific degree programs with duration, cost, ROI analysis, and online/offline options.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏫</div>
+          <h4>University Suggestions</h4>
+          <p>Top 3–5 universities matched to your budget, location, and career goals.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h4>Skills Roadmap</h4>
+          <p>A prioritized, 10-skill learning plan with free and paid resources for each skill.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📅</div>
+          <h4>Action Plan</h4>
+          <p>Month-by-month short-term (6 months) and long-term (3 year) career execution roadmap.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h4>Salary Projections</h4>
+          <p>Realistic entry-level to senior salary ranges for each recommended career path.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-card">
+        <h2>Ready to find your path?</h2>
+        <p>Join thousands of students who've used CareerAI to make confident career decisions.</p>
+        <button class="btn btn-primary btn-lg" onclick="showPage('form-page')">
+          <span>Start Free Assessment</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-brand">🧠 CareerAI</div>
+      <p>AI-powered career guidance system &bull; Powered by advanced language models</p>
+    </footer>
+  </div>
+
+  <!-- ─── FORM PAGE ──────────────────────────────────────────── -->
+  <div id="form-page" class="page">
+    <div class="form-header">
+      <button class="btn-back" onclick="showPage('landing-page')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back
+      </button>
+      <div class="form-brand">🧠 CareerAI Assessment</div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-info">
+        <span id="step-label">Step 1 of 5: Personal Info</span>
+        <span id="step-percent">20%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill" style="width:20%"></div>
+      </div>
+      <div class="step-dots">
+        <div class="step-dot active" data-step="1" title="Personal Info"></div>
+        <div class="step-dot" data-step="2" title="Education"></div>
+        <div class="step-dot" data-step="3" title="Skills & Interests"></div>
+        <div class="step-dot" data-step="4" title="Goals & Preferences"></div>
+        <div class="step-dot" data-step="5" title="Final Details"></div>
+      </div>
+    </div>
+
+    <div class="form-body">
+      <!-- STEP 1: Personal Info -->
+      <div class="form-step active" id="step-1">
+        <div class="step-header">
+          <div class="step-emoji">👤</div>
+          <h2>Let's start with the basics</h2>
+          <p>Tell us a bit about yourself so we can personalize your report.</p>
+        </div>
+        <div class="form-grid">
+          <div class="form-group full">
+            <label for="name">Full Name <span class="required">*</span></label>
+            <input type="text" id="name" placeholder="e.g., Rahul Sharma" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+91 98765 43210" />
+          </div>
+          <div class="form-group full">
+            <label for="location">Preferred Location <span class="required">*</span></label>
+            <input type="text" id="location" placeholder="e.g., Bangalore, India / Open to relocate" required />
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 2: Education -->
+      <div class="form-step" id="step-2">
+        <div class="step-header">
+          <div class="step-emoji">🎓</div>
+          <h2>Your Education Background</h2>
+          <p>Help us understand where you are in your academic journey.</p>
+        </div>
+        <div class="form-grid">
+          <div class="form-group full">
+            <label for="education-level">Current Education Level <span class="required">*</span></label>
+            <select id="education-level" required>
+              <option value="">— Select your current level —</option>
+              <option value="10th Grade">10th Grade / Secondary School</option>
+              <option value="12th Grade">12th Grade / High School</option>
+              <option value="Undergraduate">Undergraduate (pursuing)</option>
+              <option value="Graduate">Graduate / Bachelor's Completed</option>
+              <option value="Postgraduate">Postgraduate (pursuing/completed)</option>
+              <option value="Working Professional">Working Professional</option>
+              <option value="Diploma">Diploma/Certificate holder</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="current-course">Current Degree/Course <span class="required">*</span></label>
+            <input type="text" id="current-course" placeholder="e.g., B.Tech Computer Science, B.Com, 12th Science" required />
+          </div>
+          <div class="form-group">
+            <label for="college">College / University</label>
+            <input type="text" id="college" placeholder="e.g., Mumbai University, IIT Delhi" />
+          </div>
+          <div class="form-group">
+            <label for="year">Year / Semester</label>
+            <input type="text" id="year" placeholder="e.g., 3rd Year, 5th Semester, 2023 Graduate" />
+          </div>
+          <div class="form-group full">
+            <label for="experience">Work / Project Experience</label>
+            <textarea id="experience" rows="3" placeholder="e.g., 1 year self-learning Python, no professional experience / 2 years as backend developer at XYZ startup..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 3: Skills -->
+      <div class="form-step" id="step-3">
+        <div class="step-header">
+          <div class="step-emoji">⚡</div>
+          <h2>Skills & Interests</h2>
+          <p>The more detail you provide, the more accurate your recommendations will be.</p>
+        </div>
+        <div class="form-grid">
+          <div class="form-group full">
+            <label for="tech-skills">Technical Skills <span class="required">*</span></label>
+            <textarea id="tech-skills" rows="3" placeholder="e.g., Python (beginner), JavaScript, MS Excel, SQL basics, AutoCAD, Graphic Design, Tally..." required></textarea>
+            <span class="field-hint">List all technical skills, even basic ones. Include proficiency level if known.</span>
+          </div>
+          <div class="form-group full">
+            <label for="soft-skills">Soft Skills</label>
+            <div class="tag-selector" id="soft-skills-tags">
+              <div class="tag-option" data-value="Communication">Communication</div>
+              <div class="tag-option" data-value="Leadership">Leadership</div>
+              <div class="tag-option" data-value="Problem Solving">Problem Solving</div>
+              <div class="tag-option" data-value="Teamwork">Teamwork</div>
+              <div class="tag-option" data-value="Creativity">Creativity</div>
+              <div class="tag-option" data-value="Analytical Thinking">Analytical Thinking</div>
+              <div class="tag-option" data-value="Time Management">Time Management</div>
+              <div class="tag-option" data-value="Adaptability">Adaptability</div>
+              <div class="tag-option" data-value="Critical Thinking">Critical Thinking</div>
+              <div class="tag-option" data-value="Presentation">Presentation</div>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label for="interests">Interests & Passions <span class="required">*</span></label>
+            <textarea id="interests" rows="3" placeholder="e.g., Technology, Problem-solving, Music, Business, Writing, Finance, Gaming, Social impact..." required></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 4: Goals -->
+      <div class="form-step" id="step-4">
+        <div class="step-header">
+          <div class="step-emoji">🎯</div>
+          <h2>Career Goals & Preferences</h2>
+          <p>Tell us what you're aiming for — be as specific or exploratory as you like.</p>
+        </div>
+        <div class="form-grid">
+          <div class="form-group full">
+            <label for="career-goals">Career Goals <span class="required">*</span></label>
+            <textarea id="career-goals" rows="3" placeholder="e.g., I want to become a software developer / I'm not sure yet and exploring options / I want to transition from finance to tech..." required></textarea>
+          </div>
+          <div class="form-group full">
+            <label for="preferred-field">Preferred Field / Industry</label>
+            <select id="preferred-field">
+              <option value="">— Select preferred field (optional) —</option>
+              <option value="Technology / IT">Technology / IT</option>
+              <option value="Finance & Banking">Finance & Banking</option>
+              <option value="Business & Management">Business & Management</option>
+              <option value="Healthcare / Medicine">Healthcare / Medicine</option>
+              <option value="Design & Creative Arts">Design & Creative Arts</option>
+              <option value="Data Science & AI">Data Science & AI</option>
+              <option value="Law">Law</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Education">Education</option>
+              <option value="Marketing & Media">Marketing & Media</option>
+              <option value="Entrepreneurship">Entrepreneurship</option>
+              <option value="Government / Civil Services">Government / Civil Services</option>
+              <option value="Not sure yet">Not sure yet — help me decide</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 5: Preferences -->
+      <div class="form-step" id="step-5">
+        <div class="step-header">
+          <div class="step-emoji">🏫</div>
+          <h2>Higher Education Preferences</h2>
+          <p>Last step! Tell us about your higher education plans and budget.</p>
+        </div>
+        <div class="form-grid">
+          <div class="form-group full">
+            <label>Study Mode Preference <span class="required">*</span></label>
+            <div class="radio-group" id="study-mode">
+              <label class="radio-option" for="mode-online">
+                <input type="radio" name="study-mode" id="mode-online" value="Online" />
+                <div class="radio-content">
+                  <span class="radio-icon">💻</span>
+                  <span class="radio-title">Online</span>
+                  <span class="radio-desc">Study from anywhere</span>
+                </div>
+              </label>
+              <label class="radio-option" for="mode-offline">
+                <input type="radio" name="study-mode" id="mode-offline" value="Offline" />
+                <div class="radio-content">
+                  <span class="radio-icon">🏫</span>
+                  <span class="radio-title">On-Campus</span>
+                  <span class="radio-desc">Traditional classroom</span>
+                </div>
+              </label>
+              <label class="radio-option" for="mode-hybrid">
+                <input type="radio" name="study-mode" id="mode-hybrid" value="Hybrid" />
+                <div class="radio-content">
+                  <span class="radio-icon">🔀</span>
+                  <span class="radio-title">Hybrid</span>
+                  <span class="radio-desc">Best of both worlds</span>
+                </div>
+              </label>
+              <label class="radio-option" for="mode-distance">
+                <input type="radio" name="study-mode" id="mode-distance" value="Distance" />
+                <div class="radio-content">
+                  <span class="radio-icon">📬</span>
+                  <span class="radio-title">Distance</span>
+                  <span class="radio-desc">Correspondence / DLP</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group full">
+            <label for="budget">Budget for Higher Education</label>
+            <select id="budget">
+              <option value="">— Select budget range —</option>
+              <option value="Under ₹2 lakhs">Under ₹2 lakhs</option>
+              <option value="₹2–5 lakhs">₹2–5 lakhs</option>
+              <option value="₹5–10 lakhs">₹5–10 lakhs</option>
+              <option value="₹10–20 lakhs">₹10–20 lakhs</option>
+              <option value="₹20+ lakhs">₹20+ lakhs / International</option>
+              <option value="Scholarship dependent">Scholarship dependent</option>
+            </select>
+          </div>
+
+          <div class="form-group full">
+            <label>Are you interested in personal counseling? <span class="required">*</span></label>
+            <div class="radio-group counseling-group" id="counseling-intent">
+              <label class="radio-option" for="counsel-yes">
+                <input type="radio" name="counseling" id="counsel-yes" value="Yes" />
+                <div class="radio-content">
+                  <span class="radio-icon">✅</span>
+                  <span class="radio-title">Yes, I'd love it</span>
+                </div>
+              </label>
+              <label class="radio-option" for="counsel-maybe">
+                <input type="radio" name="counseling" id="counsel-maybe" value="Maybe" />
+                <div class="radio-content">
+                  <span class="radio-icon">🤔</span>
+                  <span class="radio-title">Maybe / Exploring</span>
+                </div>
+              </label>
+              <label class="radio-option" for="counsel-no">
+                <input type="radio" name="counseling" id="counsel-no" value="No" />
+                <div class="radio-content">
+                  <span class="radio-icon">❌</span>
+                  <span class="radio-title">No, just the report</span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAV BUTTONS -->
+      <div class="form-nav">
+        <button class="btn btn-ghost" id="prev-btn" onclick="prevStep()" style="visibility:hidden">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Previous
+        </button>
+        <button class="btn btn-primary" id="next-btn" onclick="nextStep()">
+          Next Step
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── ANALYSIS PAGE ──────────────────────────────────────── -->
+  <div id="analysis-page" class="page">
+    <div class="analysis-container">
+      <div class="analysis-brain">🧠</div>
+      <h2 class="analysis-title">Analyzing Your Profile</h2>
+      <p class="analysis-subtitle">Our AI is running 8 deep analysis steps on your unique profile…</p>
+      <div class="analysis-steps">
+        <div class="analysis-step" id="astep-1">
+          <div class="astep-icon">⏳</div>
+          <div class="astep-text">
+            <strong>Skill Inventory Assessment</strong>
+            <span>Mapping your skills to career opportunities</span>
+          </div>
+          <div class="astep-status"></div>
+        </div>
+        <div class="analysis-step" id="astep-2">
+          <div class="astep-icon">⏳</div>
+          <div class="astep-text">
+            <strong>Career Aptitude Analysis</strong>
+            <span>Matching personality and background to careers</span>
+          </div>
+          <div class="astep-status"></div>
+        </div>
+        <div class="analysis-step" id="astep-3">
+          <div class="astep-icon">⏳</div>
+          <div class="astep-text">
+            <strong>Market Relevance Check</strong>
+            <span>Validating your goals against job market reality</span>
+          </div>
+          <div class="astep-status"></div>
+        </div>
+        <div class="analysis-step" id="astep-4">
+          <div class="astep-icon">⏳</div>
+          <div class="astep-text">
+            <strong>Career Path Generation</strong>
+            <span>Building your top 3–5 career paths with match %</span>
+          </div>
+          <div class="astep-status"></div>
+        </div>
+        <div class="analysis-step" id="astep-5">
+          <div class="astep-icon">⏳</div>
+          <div class="astep-text">
+            <strong>Degree Pathway Mapping</strong>
+            <span>Identifying best degree programs for your goals</span>
+          </div>
+          <div class="astep-status"></div>
+        </div>
+        <div class="analysis-step" id="astep-6">
+          <div class="astep-icon">⏳</div>
+          <div class="astep-text">
+            <strong>University Matching</strong>
+            <span>Selecting universities aligned to budget & location</span>
+          </div>
+          <div class="astep-status"></div>
+        </div>
+        <div class="analysis-step" id="astep-7">
+          <div class="astep-icon">⏳</div>
+          <div class="astep-text">
+            <strong>Skills Roadmap Creation</strong>
+            <span>Building your priority learning plan</span>
+          </div>
+          <div class="astep-status"></div>
+        </div>
+        <div class="analysis-step" id="astep-8">
+          <div class="astep-icon">⏳</div>
+          <div class="astep-text">
+            <strong>Action Plan Generation</strong>
+            <span>Crafting your 3-month and 3-year roadmap</span>
+          </div>
+          <div class="astep-status"></div>
+        </div>
+      </div>
+      <div class="analysis-progress-bar">
+        <div class="analysis-fill" id="analysis-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── REPORT PAGE ────────────────────────────────────────── -->
+  <div id="report-page" class="page">
+    <div class="report-header">
+      <div class="report-header-content">
+        <div class="report-logo">🧠 CareerAI</div>
+        <h1 class="report-title">Your Career Intelligence Report</h1>
+        <p class="report-subtitle" id="report-name-banner">Personalized for <strong></strong></p>
+        <div class="report-actions">
+          <button class="btn btn-ghost btn-sm" onclick="window.print()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Print Report
+          </button>
+          <button class="btn btn-primary btn-sm" onclick="startOver()">
+            New Assessment
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="report-body" id="report-body">
+      <!-- Dynamically populated by JS -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
